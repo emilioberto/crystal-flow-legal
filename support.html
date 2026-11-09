@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>Crystal Flow — Support</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 24px 20px 48px; background: #fffaf0; color: #302442; font: 16px/1.65 system-ui, sans-serif; overflow-wrap: anywhere; }
+    main { max-width: 72ch; margin: auto; }
+    nav { display: flex; flex-wrap: wrap; gap: 18px; margin-bottom: 28px; }
+    a { color: #6135a2; text-underline-offset: 3px; }
+    a:focus-visible { outline: 3px solid #9872db; outline-offset: 4px; }
+    h1 { font-size: 1.8rem; line-height: 1.2; }
+    h2 { margin-top: 28px; font-size: 1.15rem; }
+    li + li { margin-top: 8px; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+<main>
+  <nav aria-label="Language / Lingua"><a href="?lang=it" lang="it">Italiano</a><a href="?lang=en" lang="en">English</a><a href="privacy.html">Privacy</a></nav>
+  <article data-language="it" lang="it">
+    <h1>Assistenza Crystal Flow</h1>
+    <p>Per assistenza scrivi a <a href="mailto:berthuslabs@gmail.com">berthuslabs@gmail.com</a>. Il gioco è gestito da Emilio Bertò.</p>
+    <h2>Segnalare un problema</h2>
+    <p>Indica Android o iOS, modello del dispositivo, versione del sistema e del gioco, livello interessato e passaggi per riprodurre il problema. Puoi allegare uno screenshot, evitando dati personali. Non inviare password, numero completo della carta, ricevute complete o token di acquisto pubblicamente.</p>
+    <h2>Acquisti e ripristino</h2>
+    <p>Se un acquisto risulta in attesa, attendi la conferma dello store prima di ripeterlo. Controlla di usare lo stesso account Google Play o Apple con cui hai acquistato. Riapri il gioco con connessione disponibile; per gli acquisti ripristinabili apri il Negozio e scegli Ripristina acquisti. Le risorse consumabili già utilizzate non vengono ricreate da un ripristino. Se manca ancora un acquisto, contattaci indicando prodotto, data e piattaforma; ti chiederemo soltanto i dettagli necessari in privato.</p>
+    <p>No Ads rimuove banner e annunci tra i livelli. I video premiati restano facoltativi e possono essere scelti per ottenere la ricompensa indicata. Per richieste di rimborso consulta le procedure di <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener noreferrer">Google Play</a> o <a href="https://support.apple.com/118223" target="_blank" rel="noopener noreferrer">Apple</a>.</p>
+    <h2>Video non disponibile o ricompensa mancante</h2>
+    <p>I video richiedono connessione, disponibilità del servizio e completamento confermato. Se nessun annuncio è disponibile puoi continuare con le alternative mostrate dal gioco; un video saltato o fallito non assegna la ricompensa. Se hai completato un video ma manca il premio, segnala data, ora, tipo di premio e livello.</p>
+    <h2>Segnalare una pubblicità inappropriata</h2>
+    <p>Se il banner o il video offre un pulsante informativo o di segnalazione, puoi usarlo. Puoi anche scrivere all'assistenza indicando data, ora, paese, inserzionista o prodotto mostrato e formato dell'annuncio. Allega uno screenshot solo se opportuno, senza dati sensibili. Non occorre fare clic sulla pubblicità per segnalarla.</p>
+    <h2>Progressi e cancellazione dati</h2>
+    <p>I progressi sono salvati sul dispositivo. Rimuovere il gioco o cancellarne i dati può eliminare progressi e risorse. Non promettiamo recupero o sincronizzazione tra dispositivi. Prima di cancellare dati per risolvere un problema, contattaci se vuoi conservare la partita. Per le informazioni sui dati e le tue scelte consulta l'<a href="privacy.html?lang=it">informativa privacy</a>.</p>
+  </article>
+  <article data-language="en" lang="en" hidden>
+    <h1>Crystal Flow support</h1>
+    <p>Contact <a href="mailto:berthuslabs@gmail.com">berthuslabs@gmail.com</a> for help. Crystal Flow is operated by Emilio Bertò.</p>
+    <h2>Report a problem</h2>
+    <p>Include Android or iOS, device model, operating-system and game version, affected level and steps to reproduce the issue. You can attach a screenshot without personal information. Never post passwords, full payment-card details, complete receipts or purchase tokens publicly.</p>
+    <h2>Purchases and restoration</h2>
+    <p>If a purchase is pending, wait for the store's confirmation before trying again. Check that you are using the Google Play or Apple account that made the purchase. Reopen the game with a connection; for restorable purchases, open the Shop and choose Restore purchases. Consumable resources already used are not recreated by restoration. If a purchase is still missing, contact us with the product, date and platform; we will request only the necessary details privately.</p>
+    <p>No Ads removes banners and ads between levels. Rewarded videos remain optional and can be chosen for the displayed reward. For refunds, see the procedures from <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener noreferrer">Google Play</a> or <a href="https://support.apple.com/118223" target="_blank" rel="noopener noreferrer">Apple</a>.</p>
+    <h2>Unavailable videos or missing rewards</h2>
+    <p>Videos require a connection, ad availability and confirmed completion. If no ad is available, use the alternatives shown in the game; a skipped or failed video does not grant a reward. If a completed video did not deliver its reward, report the date, time, reward type and level.</p>
+    <h2>Report an inappropriate ad</h2>
+    <p>If the banner or video provides an information or reporting control, you may use it. You can also contact support with the date, time, country, advertiser or product shown and ad format. Attach a screenshot only when appropriate and without sensitive information. You do not need to click an ad to report it.</p>
+    <h2>Progress and deleting information</h2>
+    <p>Progress is stored on your device. Removing the game or clearing its data may erase progress and resources. We do not promise recovery or synchronisation across devices. Before clearing data to troubleshoot, contact us if you want to preserve your game. Read the <a href="privacy.html?lang=en">privacy policy</a> for information about your data and choices.</p>
+  </article>
+</main>
+<script>
+  const language = new URLSearchParams(location.search).get("lang") === "en" ? "en" : "it";
+  document.documentElement.lang = language;
+  for (const article of document.querySelectorAll("[data-language]")) {
+    article.hidden = article.dataset.language !== language;
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+    <meta name="theme-color" content="#2b3a7e" />
+    <title>Crystal Flow</title>
+    <link rel="icon" type="image/png" href="./assets/v3/branding/app_icon_ios_1024.png" />
+    <link rel="apple-touch-icon" href="./assets/v3/branding/app_icon_ios_1024.png" />
+    <link rel="preload" as="image" href="./assets/v3/branding/splash_composite.webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="./assets/v3/hero/hero_background.webp" />
+    <link rel="preload" as="image" href="./assets/v3/ui/footer_background.png" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        background: #5a10b4;
+      }
+      #boot {
+        position: fixed;
+        inset: 0;
+        z-index: 1000;
+        background: #5a10b4;
+        transition: opacity 0.35s ease-out;
+      }
+      #boot img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      #boot:not(.done) ~ #app {
+        display: none;
+      }
+      #boot.done {
+        opacity: 0;
+        pointer-events: none;
+      }
+      #boot .bar {
+        position: absolute;
+        left: 50%;
+        top: 70%;
+        width: min(56vw, 300px);
+        height: 12px;
+        transform: translateX(-50%);
+        border-radius: 999px;
+        background: rgba(40, 10, 90, 0.45);
+        box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.35), 0 0 0 3px rgba(255, 255, 255, 0.85);
+        overflow: hidden;
+      }
+      #boot .bar i {
+        display: block;
+        height: 100%;
+        width: var(--p, 8%);
+        border-radius: inherit;
+        background: linear-gradient(#ffe27a, #f7a21b);
+        transition: width 0.25s ease-out;
+      }
+      #boot .boot-error {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: min(88%, 380px);
+        padding: 20px;
+        border-radius: 20px;
+        background: #fff7e6;
+        color: #302442;
+        text-align: center;
+        box-shadow: 0 8px 30px #28104a66;
+      }
+      #boot .boot-error button {
+        min-height: 44px;
+        min-width: 120px;
+        border: 0;
+        border-radius: 12px;
+        background: #6135a2;
+        color: white;
+        font: inherit;
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-CVIEXXFd.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D2PdFhXJ.css">
+  </head>
+  <body>
+    <div id="boot" role="progressbar" aria-label="Crystal Flow" aria-busy="true" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><img src="./assets/v3/branding/splash_composite.webp" alt="" decoding="sync" fetchpriority="high" /><div class="bar"><i></i></div></div>
+    <div id="app"></div>
+  </body>
+</html>
